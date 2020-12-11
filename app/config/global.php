@@ -26,3 +26,12 @@ define("PATH_IMAGEM_USUARIO", "../public/img/usuario");
 define("EMAIL_FROM_NAME_ERRO", "[ERRO] DR Logistica");
 define("EMAIL_TI", "diegoallinone@gmail.com");
 define("RESPONSAVEL_TI", "Diego Rodrigues");
+
+
+// Status Motorista
+define("MOTORISTA_REGULAR", 1);
+define("MOTORISTA_ATESTADO", 2);
+define("MOTORISTA_BLACK_LIST", 3);
+define("MOTORISTA_FERIAS", 4);
+define("MOTORISTA_OBITO", 5);
+define("MOTORISTA_CNH_VENCIDA", 6);
