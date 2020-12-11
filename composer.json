@@ -1,0 +1,21 @@
+{
+    "name": "diego.rodrigues/php-banco",
+    "description": "Projeto Banco de Dados com PHP",
+    "require": {
+        "monolog/monolog": "^2.1",
+        "twig/twig": "^3.1",
+        "phpmailer/phpmailer": "^6.2"
+    },
+    "autoload": 
+	{
+		"psr-4": {
+			"app\\": "app/"
+		}
+	},
+    "authors": [
+        {
+            "name": "\"Diego Rodrigues\"",
+            "email": "diegoallinone@gmail.com"
+        }
+    ]
+}
