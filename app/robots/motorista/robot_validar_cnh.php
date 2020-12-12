@@ -1,6 +1,6 @@
 <?php
 /**
- * Rotina responsável por validar as CNHs dos motoristas
+ * É aqui que a CNH vai espanar, é aqui que o motorista é descoberto na calça curta.
  */
 require "../../../vendor/autoload.php";
 require "../../config/global.php";
