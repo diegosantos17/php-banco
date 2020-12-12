@@ -159,6 +159,21 @@ class MotoristaRepository extends RepositoryBase implements RepositoryInterface
         }
     }
 
+    public function delete($id): bool
+    {
+        try {
+            $sql = 'DELETE 
+                    FROM 
+                        motorista
+                    WHERE 
+                        id = :id';
+
+            return $this->executeNonQuery($sql, [':id' => $id]);
+        } catch (Exception $ex) {
+            throw new Exception("Erro interno, contate o administrador");
+        }
+    }
+
     public function view($id)
     {
         try {
@@ -172,21 +187,6 @@ class MotoristaRepository extends RepositoryBase implements RepositoryInterface
             $dr = $this->executeQueryOneRow($sql, [':id' => $id]);
 
             return $this->collection($dr);
-        } catch (Exception $ex) {
-            throw new Exception("Erro interno, contate o administrador");
-        }
-    }
-
-    public function delete($id): bool
-    {
-        try {
-            $sql = 'DELETE 
-                    FROM 
-                        motorista
-                    WHERE 
-                        id = :id';
-
-            return $this->executeNonQuery($sql, [':id' => $id]);
         } catch (Exception $ex) {
             throw new Exception("Erro interno, contate o administrador");
         }
